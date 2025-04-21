@@ -316,6 +316,7 @@ template {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --white20: #ffffff50;
   --Ghost: #F0FAFF;
   --Lily: #ECF9FF;
   --Snowdrop: #F9FDFF;
@@ -402,4 +403,43 @@ textarea {
 
 #hero-card h5 {
   color: var(--nightblue);
+}
+
+/* =============
+   packages
+============= */
+#packages {
+  background-color: var(--Lily);
+}
+#packages h1 {
+  color: var(--nightblue);
+}
+#packages #package-button-container {
+  background-color: var(--white);
+}
+#packages #package-button-container button {
+  border: none;
+}
+#packages #package-button-container #left-arrow {
+  color: var(--Grey);
+}
+#packages #package-button-container #right-arrow {
+  background-color: var(--Aqua);
+  color: var(--white);
+}
+#packages #package-card-container .package-card {
+  background-color: var(--Ghost);
+  border: 1px solid var(--white);
+}
+#packages #package-card-container .package-card p {
+  color: var(--nightblue);
+}
+#packages #package-card-container .package-card h4 {
+  color: var(--Grey);
+}
+#packages #package-card-container .package-card h3 {
+  color: var(--Aqua);
+}
+#packages #package-card-container .selected {
+  background-color: var(--white);
 }

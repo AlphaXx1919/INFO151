@@ -1,0 +1,47 @@
+/* =============
+   packages
+============= */
+#packages{
+    background-color: var(--Lily);
+    h1{
+        color:var(--nightblue);
+    }
+    #package-button-container{
+        background-color: var(--white);
+
+        button{
+            border: none;
+        }
+        #left-arrow{
+        color:var(--Grey);
+        }
+        #right-arrow{
+            background-color: var(--Aqua);
+            color: var(--white);
+
+        }
+    }
+    #package-card-container{
+        .package-card{
+          background-color: var(--Ghost) ;  
+          border: 1px solid var(--white);
+
+          p{
+            color: var(--nightblue) ;
+          }
+
+          h4{
+            color: var(--Grey);
+          }
+
+          h3{
+            color: var(--Aqua);
+          }
+
+        }
+
+        .selected{
+            background-color: var(--white);
+        }
+    }
+}

@@ -1,12 +1,12 @@
-<section>
+<section id="packages">
     <h1>Popular packages</h1>
     <img src="img/packages/icongreen.svg" alt="greenoutline">
-
-    <button><img src="img/packages/vector_left.png" alt="left icon"></button>
-    <button><img src="img/packages/vector.png" alt="left icon"></button>
-
-    <ul>
-        <li>
+    <div id="package-button-container">
+    <button id="left-arrow"><img src="img/packages/vector_left.png" alt="left icon"></button>
+    <button id="right-arrow"><img src="img/packages/vector.png" alt="left icon"></button>
+    </div>
+    <ul id="package-card-container">
+        <li class="package-card">
             <img src="img/packages/card1.jpg" alt="coffeshop" class="img-scaler">
             <p>The Basic package to start your promotion</p>
 
@@ -19,7 +19,7 @@
             <h3>$89.00</h3>
         </li>
 
-        <li>
+        <li class="selected package-card">
             <img src="img/packages/card3.jpg" alt="coffeshop" class="img-scaler">
             <p>The standard package to grow your business</p>
 
@@ -32,7 +32,7 @@
             <h3>$109.00</h3>
         </li>
 
-        <li>
+        <li class="package-card">
             <img src="img/packages/card2.jpg" alt="coffeshop" class="img-scaler">
             <p>The premium package to boost your promotion</p>
 
