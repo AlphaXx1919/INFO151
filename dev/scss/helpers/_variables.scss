@@ -15,12 +15,20 @@ $screen-lg-min: 992px;
 // Extra desktops
 $screen-xl-min: 1200px;
 
-// Extra Extra Large desktops
+// Extra Extra Large desktops 
 $screen-xxl-min: 1440px;
 
 
 // Colors vars
 :root {
-    --black: #000000;
-    --white: #ffffff;
+    --black:    #000000;
+    --white:    #ffffff;
+    --Ghost:    #F0FAFF;
+    --Lily:     #ECF9FF;
+    --Snowdrop: #F9FDFF;
+    --Aqua:     #00E5CC;
+    --nightblue:#060640;
+    --Grey:     #9090A7;
+    --Jaguar:   #000020;
+
   }

@@ -1,0 +1,27 @@
+/* =============
+    Hero
+============= */
+@use "../helpers";
+#hero {
+    background-color: var(--Lily);
+  }
+#hero section article h1 {
+    color:var(--nightblue);
+  }
+  #hero section article p {
+    color:var(--Grey);
+  }
+  #hero section article a:link, a:visited {
+    background-color: var(--nightblue);
+    color: white;
+  }
+  #hero section article button {
+    background-color: var(--white);
+    border: none;
+  }
+  #hero-card{
+    background-color: var(--Snowdrop);
+  }
+  #hero-card h5{
+    color: var(--nightblue);
+  }
