@@ -1,6 +1,7 @@
 /* =============
    packages
 ============= */
+@use "../helpers";
 #packages{
     background-color: var(--Lily);
     h1{
@@ -28,14 +29,21 @@
 
           p{
             color: var(--nightblue) ;
+            font-weight: 600; 
+            font-size:helpers.rem-calc(20);
+            line-height:helpers.rem-calc(28);
           }
 
           h4{
             color: var(--Grey);
+            font-size:helpers.rem-calc(14);
+            line-height:helpers.rem-calc(28);
           }
 
           h3{
             color: var(--Aqua);
+            font-size:helpers.rem-calc(14);
+            line-height:helpers.rem-calc(28);
           }
 
         }
