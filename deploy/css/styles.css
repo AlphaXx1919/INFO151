@@ -339,9 +339,31 @@ html {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section-title {
+  color: var(--nightblue);
+  font-size: 3.125rem;
+  line-height: 4.0625rem;
+}
+
+/* .open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
 /* =============
     Buttons
 ============= */
+a {
+  text-decoration: none;
+}
+
 /* =============
     Forms
 ============= */
@@ -374,7 +396,6 @@ textarea {
 /* =============
     Hero
 ============= */
-@use "../helpers";
 #hero {
   background-color: var(--Lily);
 }
@@ -385,11 +406,15 @@ textarea {
 
 #hero section article p {
   color: var(--Grey);
+  font-weight: 600;
+  line-height: 1.75rem;
 }
 
 #hero section article a:link, a:visited {
   background-color: var(--nightblue);
   color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 
 #hero section article button {
@@ -400,9 +425,16 @@ textarea {
 #hero-card {
   background-color: var(--Snowdrop);
 }
+#hero-card p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
 
 #hero-card h5 {
   color: var(--nightblue);
+  font-weight: 600;
+  font-size: 0.875rem;
 }
 
 /* =============
