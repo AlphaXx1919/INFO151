@@ -4,11 +4,17 @@
 @use "../helpers";
 #packages{
     background-color: var(--Lily);
-    h1{
+    padding: 100px 24px;
+
+    #top-content{
+      text-align: center;
+      h1{
         color:var(--nightblue);
     }
     #package-button-container{
         background-color: var(--white);
+        //week4
+        display: inline-block;
 
         button{
             border: none;
@@ -22,16 +28,23 @@
 
         }
     }
+ 
+    }
     #package-card-container{
+      margin: 24px 0px; ;
         .package-card{
           background-color: var(--Ghost) ;  
           border: 1px solid var(--white);
+          margin: bottom 48px;
+          padding: 16px;
+          border-radius: 14px;
 
           p{
             color: var(--nightblue) ;
             font-weight: 600; 
             font-size:helpers.rem-calc(20);
             line-height:helpers.rem-calc(28);
+            margin: 20px 0 16px;
           }
 
           h4{

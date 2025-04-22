@@ -1,0 +1,44 @@
+/* =============
+    Mixins
+============= */
+/* =============
+    Variables
+============= */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --white20: #ffffff50;
+  --Ghost: #F0FAFF;
+  --Lily: #ECF9FF;
+  --Snowdrop: #F9FDFF;
+  --Aqua: #00E5CC;
+  --nightblue:#060640;
+  --Grey: #9090A7;
+  --Jaguar: #000020;
+}
+
+/* ---------------- Font Sizing ---------------- */
+html {
+  font-size: 100%;
+}
+
+/* ---------------- Media Queries ---------------- */
+#global-promotion {
+  padding: 64px 24px;
+  text-align: center;
+  background-color: var(--white);
+}
+#global-promotion h1 {
+  color: var(--nightblue);
+  margin: 24px 0;
+}
+#global-promotion p {
+  color: var(--Grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-bottom: 40px;
+}
+#global-promotion img:last-of-type {
+  width: 100%;
+  max-width: 400px;
+}
