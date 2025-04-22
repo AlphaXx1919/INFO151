@@ -443,3 +443,22 @@ textarea {
 #packages #package-card-container .selected {
   background-color: var(--white);
 }
+
+#newsletter {
+  background-color: var(--Lily);
+}
+#newsletter h1 {
+  color: var(--nightblue);
+}
+#newsletter p {
+  color: var(--Grey);
+}
+#newsletter form input {
+  border: none;
+  color: var(--Grey);
+}
+#newsletter form button {
+  border: none;
+  background-color: var(--nightblue);
+  color: var(--white);
+}

@@ -1,0 +1,23 @@
+#newsletter{
+    background-color: var(--Lily);
+    h1{
+        color: var(--nightblue);
+    }
+
+    p{
+        color: var(--Grey);
+    }
+
+    form{
+        input{
+            border: none;
+            color: var(--Grey);
+        }
+        button{
+            border: none;
+            background-color: var(--nightblue);
+            color: var(--white);
+        }
+    }
+
+}
