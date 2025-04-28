@@ -434,14 +434,28 @@ textarea {
     Hero
 ============= */
 #hero {
-  background-color: var(--Lily);
+  background-color: var(--Lilywhite);
   padding: 56px 24px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "hero-img" "hero-content";
 }
-
+@media (min-width: 1200px) {
+  #hero {
+    -ms-grid-columns: 40% auto;
+    grid-template-columns: 40% auto;
+        grid-template-areas: "hero-content hero-img";
+  }
+}
+#hero section {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: hero-content;
+  padding: 0 10vw;
+}
 #hero section article h1 {
   color: var(--nightblue);
 }
-
 #hero section article p {
   color: var(--Grey);
   font-weight: 600;
@@ -449,17 +463,16 @@ textarea {
   margin-top: 24px;
   margin-bottom: 24px;
 }
-
-#hero section article a:link, a:visited {
+#hero section article a:link,
+#hero section article a:visited {
   background-color: var(--nightblue);
-  color: white;
+  color: var(--white);
   font-size: 0.875rem;
   font-weight: 600;
   padding: 22px 36px;
   border-radius: 6px;
   display: inline-block;
 }
-
 #hero section article button {
   background-color: var(--white);
   border: none;
@@ -467,6 +480,26 @@ textarea {
   width: 60px;
   border-radius: 100%;
   margin-left: 30px;
+}
+#hero aside {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hero-img;
+}
+@media (min-width: 1200px) {
+  #hero section {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #hero aside {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+@media (min-width: 768px) {
+  #hero aside {
+    margin-top: 24px;
+  }
 }
 
 #hero-card {
@@ -479,7 +512,6 @@ textarea {
   font-size: 0.875rem;
   font-weight: 600;
 }
-
 #hero-card h5 {
   color: var(--nightblue);
   font-weight: 600;
