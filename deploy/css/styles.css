@@ -647,22 +647,51 @@ textarea {
 }
 
 #newsletter {
+  margin-bottom: 100px;
   padding: 40px 24px;
 }
 #newsletter #newsletter-content {
   background-color: var(--Lily);
   padding: 60px 16px;
 }
-#newsletter #newsletter-content h1 {
+@media (min-width: 768px) {
+  #newsletter #newsletter-content {
+    padding: 60px 20vw;
+  }
+}
+@media (min-width: 992px) {
+  #newsletter #newsletter-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 60px auto;
+    grid-template-columns: 60% auto;
+    padding: 0px 0px;
+    gap: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  #newsletter #newsletter-content {
+    -ms-grid-columns: 65% auto;
+    grid-template-columns: 65% auto;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  #newsletter #newsletter-content #newsletter-left {
+    padding: 60px 0px 60px 60px;
+  }
+}
+#newsletter #newsletter-content #newsletter-left h1 {
   color: var(--nightblue);
 }
-#newsletter #newsletter-content p {
+#newsletter #newsletter-content #newsletter-left p {
   color: var(--Grey);
   font-weight: 600;
   line-height: 1.75rem;
   margin: 16px 0;
 }
-#newsletter #newsletter-content form input {
+#newsletter #newsletter-content #newsletter-left form input {
   border: none;
   color: var(--Grey);
   font-weight: 600;
@@ -676,7 +705,12 @@ textarea {
 #newsletter #newsletter-content aside {
   display: none;
 }
-
+@media (min-width: 992px) {
+  #newsletter #newsletter-content aside {
+    display: block;
+    margin-top: -50px;
+  }
+}
 #global-promotion {
   padding: 64px 24px;
   text-align: center;
