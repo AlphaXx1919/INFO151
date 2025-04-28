@@ -15,10 +15,28 @@
     font-weight: 600;
     line-height: helpers.rem-calc(28);
     margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  img:last-of-type {
+  img {
     width: 100%;
     max-width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  @include helpers.lg {
+    padding: 96px 24px;
+
+    p {
+      max-width: 700px;
+      font-size: helpers.rem-calc(18);
+    }
+
+    img {
+      max-width: 900px;
+    }
   }
 }
