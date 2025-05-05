@@ -572,9 +572,13 @@ textarea {
 #packages #package-card-container .package-card {
   background-color: var(--Ghost);
   border: 1px solid var(--white);
-  margin: bottom 48px;
+  margin-bottom: 48px;
   padding: 16px;
   border-radius: 14px;
+}
+#packages #package-card-container .package-card .package-card-img {
+  width: 100%;
+  height: 273px;
 }
 #packages #package-card-container .package-card p {
   color: var(--nightblue);
@@ -582,6 +586,12 @@ textarea {
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin: 20px 0 16px;
+}
+#packages #package-card-container .package-card .user-icons li {
+  height: 36px;
+  width: 36px;
+  border: 1px solid var(--white);
+  border-radius: 100%;
 }
 #packages #package-card-container .package-card h4 {
   color: var(--Grey);
@@ -596,15 +606,35 @@ textarea {
 #packages #package-card-container .selected {
   background-color: var(--white);
 }
-@media (min-width: 768px) {
-  #packages #package-card-container #card-1 {
-    grid-area: card-1;
-  }
+#packages #package-card-container #card-1 img.img-scaler {
+  border-radius: 14px;
+  width: 100%;
+}
+#packages #package-card-container .icon-1 {
+  background-image: url("../img/packages/user1.jpg");
+}
+#packages #package-card-container .icon-2 {
+  background-image: url("../img/packages/user3.jpg");
+  background-position: 80% 80%;
+}
+#packages #package-card-container .icon-3 {
+  background-image: url("../img/packages/user2.jpg");
 }
 @media (min-width: 768px) {
   #packages #package-card-container #card-2 {
     grid-area: card-2;
   }
+}
+#packages #package-card-container #card-2 .icon-1 {
+  background-image: url("../img/packages/user5.jpg");
+  background-position: center 30%;
+}
+#packages #package-card-container #card-2 .icon-2 {
+  background-image: url("../img/packages/user3.jpg");
+  background-position: 80% 80%;
+}
+#packages #package-card-container #card-2 .icon-3 {
+  background-image: url("../img/packages/user4.jpg");
 }
 @media (min-width: 768px) {
   #packages #package-card-container #card-3 {
@@ -612,11 +642,6 @@ textarea {
   }
 }
 @media (min-width: 768px) {
-  #packages #package-card-container #card-1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
   #packages #package-card-container #card-2 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
@@ -629,11 +654,6 @@ textarea {
   }
 }
 @media (min-width: 1200px) {
-  #packages #package-card-container #card-1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-  }
   #packages #package-card-container #card-2 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
@@ -644,6 +664,17 @@ textarea {
     -ms-grid-column: 5;
     -ms-grid-column-span: 1;
   }
+}
+#packages #package-card-container #card-3 .icon-1 {
+  background-image: url("../img/packages/user5.jpg");
+  background-position: center 30%;
+}
+#packages #package-card-container #card-3 .icon-2 {
+  background-image: url("../img/packages/user3.jpg");
+  background-position: 80% 80%;
+}
+#packages #package-card-container #card-3 .icon-3 {
+  background-image: url("../img/packages/user4.jpg");
 }
 
 #newsletter {
