@@ -508,14 +508,28 @@ textarea {
   padding: 24px 20px;
   border-radius: 12px;
 }
-#hero-card p {
-  font-size: 0.875rem;
-  font-weight: 600;
+#hero-card #stats-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-#hero-card h5 {
+#hero-card #stats-bar #star-icon {
+  margin-left: auto;
+  margin-right: 8px;
+}
+#hero-card #stats-bar h5 {
   color: var(--nightblue);
   font-weight: 600;
   font-size: 0.875rem;
+}
+#hero-card p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--Grey);
+  margin-bottom: 0;
 }
 
 /* =============
@@ -527,6 +541,22 @@ textarea {
 }
 #packages #top-content {
   text-align: center;
+}
+@media (min-width: 1200px) {
+  #packages #top-content {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  #packages #top-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 #packages #top-content h1 {
   color: var(--nightblue);
@@ -587,21 +617,34 @@ textarea {
   line-height: 1.75rem;
   margin: 20px 0 16px;
 }
-#packages #package-card-container .package-card .user-icons li {
+#packages #package-card-container .package-card .package-status-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#packages #package-card-container .package-card .package-status-bar .user-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#packages #package-card-container .package-card .package-status-bar .user-icons li {
   height: 36px;
   width: 36px;
   border: 1px solid var(--white);
   border-radius: 100%;
+  margin-right: -15px;
 }
-#packages #package-card-container .package-card h4 {
+#packages #package-card-container .package-card .package-status-bar h4 {
   color: var(--Grey);
   font-size: 0.875rem;
   line-height: 1.75rem;
+  margin-left: 20px;
 }
-#packages #package-card-container .package-card h3 {
+#packages #package-card-container .package-card .package-status-bar h3 {
   color: var(--Aqua);
   font-size: 0.875rem;
   line-height: 1.75rem;
+  margin-left: auto;
 }
 #packages #package-card-container .selected {
   background-color: var(--white);
@@ -721,6 +764,15 @@ textarea {
   font-weight: 600;
   line-height: 1.75rem;
   margin: 16px 0;
+}
+@media (min-width: 768px) {
+  #newsletter #newsletter-content #newsletter-left form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 12px 8px;
+    background-color: var(--white);
+  }
 }
 #newsletter #newsletter-content #newsletter-left form input {
   border: none;

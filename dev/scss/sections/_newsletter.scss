@@ -37,6 +37,11 @@
             }
         
             form{
+                @include helpers.md{
+                    display: flex;
+                    padding: 12px 8px;
+                    background-color: var(--white);
+                }
                 input{
                     border: none;
                     color: var(--Grey);

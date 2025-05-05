@@ -1,82 +1,74 @@
-@use "../helpers";
-
-#about {
-  padding: 80px 24px;
-  background-color: var(--white);
-
+.about-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding: 80px 24px;
+  background-color: var(--white);
+}
 
-  section {
-    h1 {
-      color: var(--nightblue);
-      margin-bottom: 16px;
-    }
+.about-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 
-    > p {
-      color: var(--Grey);
-      font-weight: 600;
-      margin-bottom: 32px;
-    }
+.about-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
-    article {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      margin-bottom: 24px;
+.about-article {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
 
-      img {
-        width: 40px;
-        height: 40px;
-      }
-
-      div {
-        display: flex;
-        flex-direction: column;
-
-        h2 {
-          color: var(--nightblue);
-          font-size: helpers.rem-calc(16);
-        }
-
-        p {
-          color: var(--Grey);
-          font-size: helpers.rem-calc(14);
-          font-weight: 500;
-        }
-      }
-    }
+  img {
+    width: 40px;
+    height: 40px;
   }
 
-  aside img {
+  div {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      color: var(--nightblue);
+      font-size: helpers.rem-calc(16);
+    }
+
+    p {
+      color: var(--Grey);
+      font-size: helpers.rem-calc(14);
+      font-weight: 500;
+    }
+  }
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+
+  img {
     width: 100%;
+    max-width: 500px;
     border-radius: 12px;
   }
+}
 
-  @include helpers.lg {
+@include helpers.lg {
+  .about-container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-    section {
-      flex: 1;
-    }
-
-    aside {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-
-      img {
-        max-width: 500px;
-        width: 100%;
-      }
-    }
   }
 
-  @include helpers.xl {
-    max-width: 1200px;
-    margin: 0 auto;
+  .about-section,
+  .about-image {
+    flex: 1;
+  }
+
+  .about-articles {
+    flex-direction: column;
   }
 }
