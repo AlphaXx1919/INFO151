@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Luka Gorozia</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">Luka Gorozia</h1>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="associations.html">Associations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="burger">☰</button>
+    </div>
+  </header>
+
+  <section class="projects-section" data-aos="fade-up">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/malware.png" alt="Malware Analysis" />
+        <h3>Malware Data Analysis</h3>
+        <p>Visualized malware behavior using Python and Power BI in a forensic case study.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/phishnet.png" alt="PhishNet" />
+        <h3>PhishNet</h3>
+        <p>Created a Chrome extension to flag phishing URLs using machine learning and blacklists.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/wifi.png" alt="WPA Cracking" />
+        <h3>WPA Wireless Cracking</h3>
+        <p>Used aircrack-ng and handshake capturing to demonstrate WPA2 vulnerabilities in lab setting.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/target.png" alt="Target Breach" />
+        <h3>Target Breach Report</h3>
+        <p>Researched and explained the 2013 Target breach using diagrams and forensics tools.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/notpetya.png" alt="NotPetya" />
+        <h3>NotPetya Malware Case</h3>
+        <p>Analyzed the global NotPetya cyberattack and documented mitigation and IOCs.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
